@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 const cryptoApiHeaders = {
     'Accept': ' */*',
-    'X-CMC_PRO_API_KEY': 'f6d1d93c-6797-4493-83a1-d86caeac73e8',
+    'X-CMC_PRO_API_KEY': `${process.env.REACT_APP_EXCHANGE_KEY}`,
     'X-Requested-With': 'XMLHttpRequest'
 };
 
